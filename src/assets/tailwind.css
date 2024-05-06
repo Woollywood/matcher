@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: 18 24 31;
+		--foreground: 255 255 255;
+
+		--button-primary-background: 50 230 226;
+		--button-secondary-background: 59 67 76;
+
+		--table-item-gray: 59 67 76;
+		--table-item-teal: 12 42 42;
+
+		--label-bg-color: 30 36 44;
+		--label-progress-bg-empty: 59 67 76;
+		--label-progress-bg-fill: 93, 141, 245;
+	}
+}
+
+body {
+	@apply overflow-hidden bg-primary text-foreground;
+}
