@@ -6,17 +6,20 @@
 </script>
 
 <template>
-	<div
-		class="wrapper group relative inline-flex h-full w-full items-center justify-center overflow-hidden rounded-xl bg-item-gray transition-colors hover:bg-item-teal"
-		:class="[props.opened ? 'bg-item-teal' : '']">
-		<span class="emoji z-0 text-4xl transition-transform" :class="[props.opened ? 'opened' : '']">{{
-			props.emoji
-		}}</span>
+	<div class="relative h-full w-full">
 		<div
-			class="sign absolute left-0 top-0 z-[1] flex h-full w-full items-center justify-center overflow-hidden bg-item-gray transition-all group-hover:bg-item-teal"
-			:class="[props.opened ? 'closed' : '', props.opened ? 'bg-item-teal' : '']">
-			<span class="inner-item text-5xl md:text-6xl">?</span>
+			class="wrapper group relative inline-flex h-full w-full items-center justify-center overflow-hidden rounded-xl bg-item-gray transition-colors hover:bg-item-teal"
+			:class="[props.opened ? 'bg-item-teal' : '']">
+			<span class="emoji z-0 text-4xl transition-transform" :class="[props.opened ? 'opened' : '']">{{
+				props.emoji
+			}}</span>
+			<div
+				class="sign absolute left-0 top-0 z-[1] flex h-full w-full items-center justify-center overflow-hidden bg-item-gray transition-all group-hover:bg-item-teal"
+				:class="[props.opened ? 'closed' : '', props.opened ? 'bg-item-teal' : '']">
+				<span class="inner-item text-5xl md:text-6xl">?</span>
+			</div>
 		</div>
+		<div class="absolute left-[50%] top-[50%] text-sm">{{ props.emoji }}</div>
 	</div>
 </template>
 

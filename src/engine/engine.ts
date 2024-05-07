@@ -104,17 +104,6 @@ export const useGameStore = defineStore('engine', () => {
 	}
 
 	watch(
-		() => matchedPairs.value,
-		(val) => {
-			if (val === MAX_GAME_ITEMS / 2) {
-				setTimeout(() => {
-					reset();
-				}, 3000);
-			}
-		},
-	);
-
-	watch(
 		() => selectedItems.value.length,
 		(val) => {
 			if (val === 2) {

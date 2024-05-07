@@ -1,5 +1,4 @@
 <script setup lang="ts">
-	import { ref, onMounted } from 'vue';
 	import { TableItem } from '@/ui/item';
 	import { TableLabel } from '@/ui/label';
 	import { TableProgress } from '@/ui/progress';
