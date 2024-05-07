@@ -89,7 +89,7 @@ export const useGameStore = defineStore('engine', () => {
 	}
 
 	function select(item: ItemType) {
-		if (selectedItems.value.length < 2) {
+		if (selectedItems.value.length < 2 && !selectedItems.value.includes(item)) {
 			item.opened = true;
 			selectedItems.value.push(item);
 		}
