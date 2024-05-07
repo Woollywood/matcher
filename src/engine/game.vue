@@ -29,9 +29,9 @@
 	);
 
 	watch(
-		() => lottiePlayer.value,
+		() => isNewLevel.value,
 		() => {
-			if (lottiePlayer.value) {
+			if (isNewLevel.value) {
 				const dotLottie = lottiePlayer.value.getDotLottieInstance();
 
 				dotLottie.addEventListener('complete', () => {
