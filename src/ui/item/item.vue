@@ -19,7 +19,6 @@
 				<span class="inner-item text-5xl md:text-6xl">?</span>
 			</div>
 		</div>
-		<div class="absolute left-[50%] top-[50%]">{{ props.emoji }}</div>
 	</div>
 </template>
 
